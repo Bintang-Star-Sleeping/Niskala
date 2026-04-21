@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monochrome | Niskala</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background: #ffffff; color: #111111; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .glass-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(20px); border-bottom: 1px solid #f0f0f0; }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-fade { opacity: 0; animation: fadeInUp 0.8s ease-out forwards; }
+        .delay-100 { animation-delay: 0.2s; }
+        .delay-200 { animation-delay: 0.4s; }
+    </style>
+</head>
+<body>
+    <nav class="fixed top-0 w-full z-50 glass-nav">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-widest uppercase">Niskala</a>
+            <a href="katalog.html" class="text-[10px] font-bold uppercase tracking-[0.2em] hover:text-gray-500 transition">Kembali ke Katalog</a>
+        </div>
+    </nav>
+
+    <header class="min-h-[60vh] flex flex-col justify-center items-center text-center px-6 pt-20 relative overflow-hidden">
+        <div class="absolute inset-0 z-0" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.4), rgba(255,255,255,1)), url('https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&w=1920&auto=format&fit=crop'); background-size: cover; background-position: center; filter: grayscale(100%);"></div>
+        <div class="z-10 animate-fade">
+            <span class="text-xs uppercase tracking-[0.3em] text-gray-500 mb-4 block">Paket Minimalis</span>
+            <h1 class="text-5xl md:text-7xl mb-4 text-[#111111]">Monochrome</h1>
+            <p class="text-xl font-light italic text-gray-600">Rp 150.000</p>
+        </div>
+    </header>
+
+    <section class="py-20 px-6 max-w-4xl mx-auto text-center">
+        <p class="text-lg leading-relaxed font-light mb-12 animate-fade delay-100">
+            Tegas, modern, dan tanpa distraksi. **Monochrome** membuang semua elemen yang tidak perlu untuk berfokus sepenuhnya pada esensi pesan Anda. Dengan kontras hitam putih yang tajam, undangan ini memberikan *statement* yang kuat.
+        </p>
+        
+        <div class="grid md:grid-cols-3 gap-8 text-left animate-fade delay-200">
+            <div class="bg-gray-50 p-8 rounded-none border-l-4 border-[#111111]">
+                <h3 class="text-xl mb-3">Filter Eksklusif</h3>
+                <p class="text-sm text-gray-600 font-light leading-relaxed">Seluruh foto dalam galeri akan dikonversi menggunakan filter Black & White resolusi tinggi secara otomatis.</p>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-none border-l-4 border-[#111111]">
+                <h3 class="text-xl mb-3">Tata Letak Grid</h3>
+                <p class="text-sm text-gray-600 font-light leading-relaxed">Struktur informasi disusun dengan gaya editorial majalah untuk kemudahan membaca secara terstruktur.</p>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-none border-l-4 border-[#111111]">
+                <h3 class="text-xl mb-3">Mode Gelap</h3>
+                <p class="text-sm text-gray-600 font-light leading-relaxed">Dukungan penuh untuk transisi tampilan cerah ke gelap menyesuaikan preferensi perangkat tamu.</p>
+            </div>
+        </div>
+
+        <a href="https://wa.me/6289513363368?text=Halo%20Niskala,%20saya%20tertarik%20dengan%20paket%20Monochrome." target="_blank" class="inline-block mt-16 px-12 py-4 bg-[#111111] text-white rounded-none text-[11px] font-bold tracking-[0.2em] hover:bg-gray-800 transition-all uppercase animate-fade delay-200">Pilih Tema Ini</a>
+    </section>
+</body>
+</html>
