@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose Pastel | Niskala</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background: #faf8f5; color: #4a3f35; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .glass-nav { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(238, 234, 229, 0.5); }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-fade { opacity: 0; animation: fadeInUp 0.8s ease-out forwards; }
+        .delay-100 { animation-delay: 0.2s; }
+        .delay-200 { animation-delay: 0.4s; }
+    </style>
+</head>
+<body>
+    <nav class="fixed top-0 w-full z-50 glass-nav">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-widest uppercase">Niskala</a>
+            <a href="katalog.html" class="text-[10px] font-bold uppercase tracking-[0.2em] hover:text-rose-400 transition">Kembali ke Katalog</a>
+        </div>
+    </nav>
+
+    <header class="min-h-[60vh] flex flex-col justify-center items-center text-center px-6 pt-20 relative overflow-hidden">
+        <div class="absolute inset-0 z-0" style="background-image: linear-gradient(to bottom, rgba(250,248,245,0.3), rgba(250,248,245,1)), url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=1920&auto=format&fit=crop'); background-size: cover; background-position: center; filter: brightness(0.9);"></div>
+        <div class="z-10 animate-fade">
+            <span class="text-xs uppercase tracking-[0.3em] text-rose-800/80 mb-4 block">Paket Estetika</span>
+            <h1 class="text-5xl md:text-7xl mb-4 text-[#4a3f35]">Rose Pastel</h1>
+            <p class="text-xl font-light italic text-rose-800/80">Rp 150.000</p>
+        </div>
+    </header>
+
+    <section class="py-20 px-6 max-w-4xl mx-auto text-center">
+        <p class="text-lg leading-relaxed font-light mb-12 animate-fade delay-100">
+            Nuansa romantis yang abadi. **Rose Pastel** memadukan palet warna lembut, tipografi mengalir, dan ornamen floral minimalis. Sempurna untuk pasangan yang menginginkan kelembutan dan kehangatan dalam setiap detail undangannya.
+        </p>
+        
+        <div class="grid md:grid-cols-3 gap-8 text-left animate-fade delay-200">
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#eeeae5]">
+                <h3 class="text-xl mb-3">Fitur Dasar</h3>
+                <ul class="text-sm space-y-2 text-gray-600 font-light">
+                    <li>• Galeri 5 Foto</li>
+                    <li>• Hitung Mundur Acara</li>
+                    <li>• Navigasi Lokasi (Maps)</li>
+                </ul>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#eeeae5]">
+                <h3 class="text-xl mb-3">RSVP & Ucapan</h3>
+                <ul class="text-sm space-y-2 text-gray-600 font-light">
+                    <li>• Form Kehadiran</li>
+                    <li>• Kolom Pesan Digital</li>
+                    <li>• Notifikasi WhatsApp</li>
+                </ul>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-[#eeeae5]">
+                <h3 class="text-xl mb-3">Musik Latar</h3>
+                <ul class="text-sm space-y-2 text-gray-600 font-light">
+                    <li>• Pilihan Lagu Romantis</li>
+                    <li>• Autoplay (Desktop)</li>
+                    <li>• Tombol Kontrol Audio</li>
+                </ul>
+            </div>
+        </div>
+
+        <a href="https://wa.me/6289513363368?text=Halo%20Niskala,%20saya%20tertarik%20dengan%20paket%20Rose%20Pastel." target="_blank" class="inline-block mt-16 px-12 py-4 bg-[#4a3f35] text-white rounded-full text-[11px] font-bold tracking-[0.2em] hover:bg-rose-900 transition-all shadow-xl uppercase animate-fade delay-200">Pesan Desain Ini</a>
+    </section>
+</body>
+</html>
